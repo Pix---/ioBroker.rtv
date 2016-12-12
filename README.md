@@ -1,4 +1,4 @@
-![Logo](admin/tvspielfilm.png)
+![Logo](admin/rtv.png)
 # ioBroker.tvspielfim
 =================
 
@@ -32,8 +32,6 @@ Der Adapter startet alle 5min und liest die RSS-Feeds "Tipps", "heute um 20:15 U
 The adapter starts every 5min to read the rss feeds "suggestions", "today at 0815pm", "today at 10pm" and "now".
 
 ##  Datenpunkte / Datapoints
-
-rtv.0.json.__filme__  (*JSON* Tabelle für VIS Widget *json,table*)
 
 rtv.0.json.__heute2015__  (*JSON* Tabelle für VIS Widget *json,table*)
 

@@ -46,21 +46,24 @@ function readSettings() {
     }
 } 
 
-function check_station (show) { // Eine Sendung/Show wird so übergeben "16:50 | Sky Cinema | Kill the Boss 2"
-    var show_info = show.split(' | ');
+function check_station (show) { // "Das Erste, am 11.12.2016 um 13:30 Uhr&lt;br/&gt;Familienfilm, D, A 2012, FSK: 6&lt..."
+    var show_info = show.split(', '); // Sender steht vor erstem Komma
     
-    // es können noch weitere Daten extrahiert und geprüft werden:
-    // showtime_info = show_info[0].split(':');
-    // showtime = new Date ();
-    // showtime.setHours(parseInt(showtime_info[0],10));   // -> 16
-    // showtime.setMinutes(parseInt(showtime_info[1],10)); // -> 50
-    // Vergleich mit aktueller zeit möglich....
+    /*
+     Rudimente aus TV-Spielfilm-Adapter
+     nötig um später ggf. Sendungen mit genauer Uhrzeit im System zu speichern
+     es können noch weitere Daten extrahiert und geprüft werden:
+     showtime_info = show_info[0].split(':');
+     showtime = new Date ();
+     showtime.setHours(parseInt(showtime_info[0],10));   // -> 16
+     showtime.setMinutes(parseInt(showtime_info[1],10)); // -> 50
+     Vergleich mit aktueller zeit möglich....
     
-    // Suche nach Filmen genauso möglich
-    // movie = show_info[2];
-    
+     Suche nach Filmen genauso möglich
+     movie = show_info[2];
+    */
     // check stationname
-    var station = show_info[1];
+    var station = show_info[0]; // erstes Element im Array
     var display = true; // show em all :-D
     
     if (adapter.config.whitelist.length === 0) { // only if no entry in whitelist use blacklist
@@ -127,7 +130,7 @@ function readFeed (x) {
                     if (result.rss.channel.item.length !== null) { // gelegentlicher Fehler bei nächtlicher Abfrage durch length (undefined) soll hier abgefangen werden
                         // Array durchzaehlen von 0 bis Zahl der items
                         for(var i = 0; i < result.rss.channel.item.length; i++) {
-                            display_station = check_station(result.rss.channel.item[i].title);
+                            display_station = check_station(result.rss.channel.item[i].description); // hier wird der Sender separiert
                             var foto;
                             if (result.rss.channel.item[i]['media:content']) {
                                 foto = result.rss.channel.item[i]['media:content'];
