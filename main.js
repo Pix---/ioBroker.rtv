@@ -161,5 +161,7 @@ function main() {
     for (var j in rss_options) {
         readFeed(j);
     }
-    adapter.stop();
+    setTimeout(function () {
+        adapter.stop();
+    }, 10 * 1000);
 }

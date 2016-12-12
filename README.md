@@ -1,5 +1,5 @@
 ![Logo](admin/rtv.png)
-# ioBroker.tvspielfim
+# ioBroker.rtv
 =================
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.rtv.svg)](https://www.npmjs.com/package/iobroker.rtv)
@@ -9,7 +9,7 @@
 [![NPM](https://nodei.co/npm/iobroker.rtv.png?downloads=true)](https://nodei.co/npm/iobroker.rtv/)
 
 ## Beschreibung / Description
-:de: Dieser Adapter liefert das TV Programm aus den RSS-Feeds "Tipps", "jetzt", 20:15 Uhr und 22:00 Uhr des Anbieters [rtv.de](http://www.rtv.de/statisch/rtv/rss-feeds.html). Die Daten werden in JSON Objekte gespeichert, um in [ioBroker.vis](https://github.com/ioBroker/ioBroker.vis) verarbeitet zu werden.
+:de: Dieser Adapter liefert das TV Programm aus den RSS-Feeds "Tipps", "jetzt", "20:15 Uhr" und "22:00 Uhr" des deutschen Anbieters [rtv.de](http://www.rtv.de/statisch/rtv/rss-feeds.html). Die Daten werden in JSON Objekte gespeichert, um in [ioBroker.vis](https://github.com/ioBroker/ioBroker.vis) verarbeitet zu werden.
 
 :uk: This adapter delivers a german tv program guide. The content ist captured from two rss feeds from supplier [rtv.de](http://www.rtv.de/statisch/rtv/rss-feeds.html) stored in JSON objects ready to use in [ioBroker.vis](https://github.com/ioBroker/ioBroker.vis)
 
