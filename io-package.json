@@ -5,7 +5,7 @@
         "desc": {                   "en": "rtv program guide from rss feed",
                                     "de": "rtv Programm Informationen aus RSS Feed",
                                     "ru": "rtv Program Guide - translate to russian, please"},
-        "version":                  "0.0.8",
+        "version":                  "0.0.9",
         "mode":                     "schedule",
         "schedule":                 "*/5 * * * *",
         "platform":                 "javascript/Node.js",
@@ -81,7 +81,7 @@
             "_id":  "json.heute2200",
             "type": "state",
             "common": {
-                "name":  "tvspielfilm 22:00 Uhr",
+                "name":  "rtv 22:00 Uhr",
                 "desc":  "Was läuft um 22:00Uhr im TV?",
                 "type":  "string",
                 "read":  true,
