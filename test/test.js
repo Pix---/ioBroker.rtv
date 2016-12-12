@@ -5,8 +5,8 @@ var objects     = null;
 var states      = null;
 var connected   = false;
 
-describe('tvspielfilm: test adapter', function() {
-    before('tvspielfilm: Start js-controller', function (_done) {
+describe('rtv: test adapter', function() {
+    before('rtv: Start js-controller', function (_done) {
         this.timeout(600000); // because of first install from npm
 
         setup.setupController(function () {
@@ -25,24 +25,24 @@ describe('tvspielfilm: test adapter', function() {
         });
     });
 
-    it('tvspielfilm: wait', function (done) {
+    it('rtv: wait', function (done) {
         this.timeout(5000);
         setTimeout(function () {
             done();
         }, 3000);
     });
 
-    it('tvspielfilm: feeds to be parsed', function (done) {
+    it('rtv: feeds to be parsed', function (done) {
         this.timeout(20000);
-        states.getState('tvspielfilm.0.json.heute2200', function (err, fileName) {
+        states.getState('rtv.0.json.heute2200', function (err, fileName) {
             expect(err).to.be.not.ok;
             expect(fileName).to.be.ok;
             expect(fileName.ack).to.be.true;
-            states.getState('tvspielfilm.0.json.filme', function (err, fileName) {
+            states.getState('rtv.0.json.tipps', function (err, fileName) {
                 expect(err).to.be.not.ok;
                 expect(fileName).to.be.ok;
                 expect(fileName.ack).to.be.true;
-                states.getState('tvspielfilm.0.json.heute2015', function (err, fileName) {
+                states.getState('rtv.0.json.heute2015', function (err, fileName) {
                     expect(err).to.be.not.ok;
                     expect(fileName).to.be.ok;
                     expect(fileName.ack).to.be.true;
@@ -52,7 +52,7 @@ describe('tvspielfilm: test adapter', function() {
         });
     });
     
-    after('tvspielfilm: Stop js-controller', function (done) {
+    after('rtv: Stop js-controller', function (done) {
         this.timeout(5000);
         setup.stopController(function () {
             done();

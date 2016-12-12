@@ -129,6 +129,8 @@ For a nicer look the following CSS is suggested to be used to the VIS editor.
 ```
 
 ## Changelog
+### 0.0.2 (2016-12-12)
+* (pix) Travis test
  
 ### 0.0.1 (2016-12-12)
 * (pix) Adapter created based on ioBroker.tvspielfim
