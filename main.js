@@ -140,8 +140,8 @@ function readFeed (x) {
                                     image: foto.url ? '<img width="100%" src="' + foto.url + '" />' : '', // nochmalige Abfrage, ob foto leer oder nicht
                                     text:  '<table class="' + rss_options[x].cssclass + '"><tr><td class="' + rss_options[x].cssclass + '_text" style="text-align: left; padding-left: 5px; font-weight: bold"><a href="' +
                                        result.rss.channel.item[i].link + '" target="_blank">' + result.rss.channel.item[i].title +
-                                       '</a></td></tr><tr><td style="text-align: left; padding-left: 5px">' +
-                                       result.rss.channel.item[i].description +'</td></tr></table>',
+                                       '</a></td></tr><tr><td style="text-align: left; padding-left: 5px"><span class="rtv_description">' +
+                                       result.rss.channel.item[i].description +'</span></td></tr></table>',
                                     _Bild: foto.url ? '<img class="tv_jetzt_bild" width="100%" src="' + foto.url + '" />' : 'no image'
                                 };
                                 table.push(entry);

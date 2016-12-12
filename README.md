@@ -144,7 +144,6 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 * Programmtipps ausblenden, die auf eine Uhrzeit hinweisen, die vor der aktuellen Uhrzeit liegt. 
 * Film-Alarm: Erkennung von zuvor festgelegten Filmtiteln
 
-
 ## License
 
 The MIT License (MIT)
