@@ -1,0 +1,93 @@
+{
+    "common": {
+        "name":                     "rtv",
+        "title":                    "rtv TV Programm",
+        "desc": {                   "en": "rtv program guide from rss feed",
+                                    "de": "rtv Programm Informationen aus RSS Feed",
+                                    "ru": "rtv Program Guide - translate to russian, please"},
+        "version":                  "0.0.1",
+        "mode":                     "schedule",
+        "schedule":                 "*/5 * * * *",
+        "platform":                 "javascript/Node.js",
+        "loglevel":                 "info",
+        "keywords":                 ["tv", "program", "guide", "Fernsehprogramm", "Tvprogramm", "Programm", "rtv", "spielfilm", "pix"],
+        "main":                     "main.js",
+        "authors":                  ["Pix"],
+        "license":                  "MIT",
+        "readme":                   "https://github.com/Pix---/ioBroker.rtv/blob/master/README.md",
+        "icon":                     "rtv.png",
+        "extIcon":                  "https://raw.githubusercontent.com/Pix---/ioBroker.rtv/master/admin/rtv.png",
+	"allowInit":                true,
+        "type":                     "schedule",
+        "config": {
+            "width": 650,
+            "height": 450,
+            "minWidth": 650,
+            "minHeight": 300
+        }
+    }, 
+    "native": {
+    	"blacklist" : [],
+    	"whitelist" : []
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id":  "json",
+            "type": "channel",
+            "common": {
+                "role": "",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "json.tipps",
+            "type": "state",
+            "common": {
+                "name":  "rtv Tipps",
+                "desc":  "TV Tipps für heute",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "json.jetzt",
+            "type": "state",
+            "common": {
+                "name":  "rtv jetzt",
+                "desc":  "Was läuft jetzt im TV?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "json.heute2015",
+            "type": "state",
+            "common": {
+                "name":  "rtv 20:15 Uhr",
+                "desc":  "Was läuft um 20:15Uhr im TV?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "json.heute2200",
+            "type": "state",
+            "common": {
+                "name":  "tvspielfilm 22:00 Uhr",
+                "desc":  "Was läuft um 22:00Uhr im TV?",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
+}
