@@ -46,7 +46,12 @@ describe('rtv: test adapter', function() {
                     expect(err).to.be.not.ok;
                     expect(fileName).to.be.ok;
                     expect(fileName.ack).to.be.true;
-                    done();
+                    states.getState('rtv.0.json.jetzt', function (err, fileName) {
+                        expect(err).to.be.not.ok;
+                        expect(fileName).to.be.ok;
+                        expect(fileName.ack).to.be.true;
+                        done();
+                    });
                 });
             });
         });

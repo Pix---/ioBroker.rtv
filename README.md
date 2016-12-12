@@ -125,8 +125,13 @@ For a nicer look the following CSS is suggested to be used to the VIS editor.
 
 ## VIS Widget
 ```
-[{"tpl":"tplTableBody","data":{"visibility-cond":"==","visibility-val":1,"static_value":"","table_oid":"tvspielfilm.0.json.tipps","colCount":"2","colName1":"Vorschau","colWidth1":"30px","colName2":"Tagestipps","colAttr1":"","colWidth2":"60px","hide_header":false,"show_scroll":false,"new_on_top":true,"name":"JSON Tabelle TV Programm TIPPS","gestures-offsetX":0,"gestures-offsetY":0},"style":{"left":"44px","top":"30px","width":"357px","height":"auto","z-index":"25","color":"rgba(250,250,250,1)","text-align":"","font-family":"","background-color":"","border-style":""},"widgetSet":"basic"}]
+[{"tpl":"tplTableBody","data":{"visibility-cond":"==","visibility-val":1,"static_value":"","table_oid":"rtv.0.json.jetzt","colCount":"2","colName1":"Vorschau","colWidth1":"140px","colName2":"Jetzt im TV (rtv)","colAttr1":"","colWidth2":"100%","hide_header":false,"show_scroll":false,"new_on_top":true,"name":"JSON Tabelle TV Programm JETZT rtv","gestures-offsetX":0,"gestures-offsetY":0,"visibility-groups-action":"hide","signals-cond-0":"==","signals-val-0":true,"signals-icon-0":"/vis/signals/lowbattery.png","signals-icon-size-0":0,"signals-blink-0":false,"signals-horz-0":0,"signals-vert-0":0,"signals-hide-edit-0":false,"signals-cond-1":"==","signals-val-1":true,"signals-icon-1":"/vis/signals/lowbattery.png","signals-icon-size-1":0,"signals-blink-1":false,"signals-horz-1":0,"signals-vert-1":0,"signals-hide-edit-1":false,"signals-cond-2":"==","signals-val-2":true,"signals-icon-2":"/vis/signals/lowbattery.png","signals-icon-size-2":0,"signals-blink-2":false,"signals-horz-2":0,"signals-vert-2":0,"signals-hide-edit-2":false},"style":{"left":"1031px","top":"157px","width":"588px","height":"1977px","z-index":"50","color":"rgba(250,250,250,1)","text-align":"","font-family":"","background-color":"","border-style":""},"widgetSet":"basic"}]
 ```
+
+##Tests:
+Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.rtv/master.svg)](https://travis-ci.org/Pix---/ioBroker.rtv)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.rtv?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker.rtv/)
+
 
 ## Changelog
 ### 0.0.2 (2016-12-12)
