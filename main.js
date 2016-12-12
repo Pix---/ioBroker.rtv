@@ -8,7 +8,7 @@ var request     = require('request');
 var lang = 'de';
 
 var adapter = utils.adapter({
-    name:           'tvspielfilm',
+    name:           'rtv',
     systemConfig:   true,
     useFormatDate:  true
 });

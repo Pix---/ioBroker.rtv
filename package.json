@@ -1,7 +1,7 @@
 {
   "name": "iobroker.rtv",
   "description": "TV Programm (jetzt und Tipps) aus den RSS Feeds von rtv.de",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "pix",
   "contributors": [
     "pix"
