@@ -134,6 +134,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 
 ## Changelog
+### 1.0.0 (2016-12-19)
+* (pix) fixed issues on Travis
+
 ### 0.0.2 (2016-12-12)
 * (pix) Travis test
  
