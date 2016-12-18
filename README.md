@@ -15,7 +15,7 @@
 
 ## Einstellungen / Configuration
 ### Whitelist
-Sollen nur Sendungen eines oder mehrerer bestimmter Sender angezeigt werden, sind diese Sendernamen in die Whitelist einzutragen. Enthält die Whitelist mindestens einen Eintrag, wird die Blacklist igoriert.
+Sollen nur Sendungen eines oder mehrerer bestimmter Sender angezeigt werden, sind diese Sendernamen in die Whitelist einzutragen. Enthält die Whitelist mindestens einen Eintrag, wird die Blacklist ignoriert.
 
 To display only a specific list of stations add the stations names to the whitelist. The blacklist will be skipped if the whitelist is not empty.
 
