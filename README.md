@@ -4,7 +4,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.rtv.svg)](https://www.npmjs.com/package/iobroker.rtv)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.rtv.svg)](https://www.npmjs.com/package/iobroker.rtv)
-[![Tests](https://travis-ci.org/ioBroker/ioBroker.rtv.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.rtv)
+[![Tests](https://travis-ci.org/Pix---/ioBroker.rtv.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.rtv)
 
 [![NPM](https://nodei.co/npm/iobroker.rtv.png?downloads=true)](https://nodei.co/npm/iobroker.rtv/)
 
