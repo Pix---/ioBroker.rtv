@@ -4,9 +4,12 @@
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.rtv.svg)](https://www.npmjs.com/package/iobroker.rtv)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.rtv.svg)](https://www.npmjs.com/package/iobroker.rtv)
-[![Tests](https://travis-ci.org/Pix---/ioBroker.rtv.svg?branch=master)](https://travis-ci.org/Pix---/ioBroker.rtv)
 
 [![NPM](https://nodei.co/npm/iobroker.rtv.png?downloads=true)](https://nodei.co/npm/iobroker.rtv/)
+
+**Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.rtv/master.svg)](https://travis-ci.org/Pix---/ioBroker.rtv)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.rtv?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker.rtv/)
+
 
 ## Beschreibung / Description
 :de: Dieser Adapter liefert das TV Programm aus den RSS-Feeds "Tipps", "jetzt", "20:15 Uhr" und "22:00 Uhr" des deutschen Anbieters [rtv.de](http://www.rtv.de/statisch/rtv/rss-feeds.html). Die Daten werden in JSON Objekte gespeichert, um in [ioBroker.vis](https://github.com/ioBroker/ioBroker.vis) verarbeitet zu werden.
@@ -135,7 +138,7 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 ## Changelog
 ### 1.0.1 (2017-01-05)
-* (pix) Travis CI finally implemented
+* (pix) Travis CI and Appveyortesting finally implemented
 
 ### 1.0.0 (2016-12-19)
 * (pix) fixed issues on Travis
