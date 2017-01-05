@@ -8,7 +8,7 @@
 [![NPM](https://nodei.co/npm/iobroker.rtv.png?downloads=true)](https://nodei.co/npm/iobroker.rtv/)
 
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.rtv/master.svg)](https://travis-ci.org/Pix---/ioBroker.rtv)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.rtv?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker.rtv/)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.rtv?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-rtv/)
 
 
 ## Beschreibung / Description
