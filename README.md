@@ -134,6 +134,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 
 
 ## Changelog
+### 1.0.1 (2017-01-05)
+* (pix) Travis CI finally implemented
+
 ### 1.0.0 (2016-12-19)
 * (pix) fixed issues on Travis
 
