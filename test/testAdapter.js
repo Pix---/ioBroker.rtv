@@ -128,22 +128,21 @@ describe('Test ' + adapterShortName + ' adapter', function() {
 
     You can also use "sendTo" method to send messages to the started adapter
 */
-    
-    it('tvspielfilm: feeds to be parsed', function (done) {
+    it('rtv: feeds to be parsed', function (done) {
         this.timeout(20000);
-        states.getState('tvspielfilm.0.json.heute2200', function (err, fileName) {
+        states.getState('rtv.0.json.heute2200', function (err, fileName) {
             expect(err).to.be.not.ok;
             expect(fileName).to.be.ok;
             expect(fileName.ack).to.be.true;
-            states.getState('tvspielfilm.0.json.filme', function (err, fileName) {
+            states.getState('rtv.0.json.tipps', function (err, fileName) {
                 expect(err).to.be.not.ok;
                 expect(fileName).to.be.ok;
                 expect(fileName.ack).to.be.true;
-                states.getState('tvspielfilm.0.json.heute2015', function (err, fileName) {
+                states.getState('rtv.0.json.heute2015', function (err, fileName) {
                     expect(err).to.be.not.ok;
                     expect(fileName).to.be.ok;
                     expect(fileName.ack).to.be.true;
-                    states.getState('tvspielfilm.0.json.jetzt', function (err, fileName) {
+                    states.getState('rtv.0.json.jetzt', function (err, fileName) {
                         expect(err).to.be.not.ok;
                         expect(fileName).to.be.ok;
                         expect(fileName.ack).to.be.true;
@@ -153,8 +152,8 @@ describe('Test ' + adapterShortName + ' adapter', function() {
             });
         });
     });
-
-
+    
+    
     after('Test ' + adapterShortName + ' adapter: Stop js-controller', function (done) {
         this.timeout(10000);
 
