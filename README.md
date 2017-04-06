@@ -19,13 +19,15 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/
 ## Einstellungen / Configuration
 ### Whitelist
 Sollen nur Sendungen eines oder mehrerer bestimmter Sender angezeigt werden, sind diese Sendernamen in die Whitelist einzutragen. Enthält die Whitelist mindestens einen Eintrag, wird die Blacklist ignoriert.
+Es ist möglich mehrere Sender mit dem Platzhalter "\*" (Stern) abzudecken: *\*RTL*, *RTL\** findet also "*SuperRTL*" und "*RTL II*"
 
 To display only a specific list of stations add the stations names to the whitelist. The blacklist will be skipped if the whitelist is not empty.
+Wildcards "\*" (Stern) can shorten the list: *\*RTL*, *RTL\** returns "*SuperRTL*" und "*RTL II*"
 
 ### Blacklist
-Sender, die nicht empfangbar sind oder nicht gelistet werden sollen, können in der Blacklist gespeichert und so bei der Ausgabe übersprungen werden. Die Blacklist wird nur berücksichtigt, wenn die Whitelist leer ist.
+Sender, die nicht empfangbar sind oder nicht gelistet werden sollen, können in der Blacklist gespeichert und so bei der Ausgabe übersprungen werden. Die Blacklist wird nur berücksichtigt, wenn die Whitelist leer ist. Platzhalter können in der Blacklist bisher nicht verwendet werden.
 
-TV channels that are not provided by your supplier or simply are not considered to be listed will be skipped. Therefore you can add them to the blacklist. The blacklist function is supported only when the whitelist is empty.
+TV channels that are not provided by your supplier or simply are not considered to be listed will be skipped. Therefore you can add them to the blacklist. The blacklist function is supported only when the whitelist is empty. The use of wildcards in the blacklist is not supported yet.
 
 ![alt text](img/rtvSettingScreenshot.jpg "Screenshot Settings")
 
