@@ -5,7 +5,7 @@
         "desc": {                   "en": "rtv program guide from rss feed",
                                     "de": "rtv Programm Informationen aus RSS Feed",
                                     "ru": "rtv Program Guide - translate to russian, please"},
-        "version":                  "1.0.1",
+        "version":                  "1.0.2",
         "mode":                     "schedule",
         "schedule":                 "*/5 * * * *",
         "platform":                 "javascript/Node.js",
