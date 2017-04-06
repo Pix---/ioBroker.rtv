@@ -31,7 +31,6 @@ adapter.on('ready', function () {
     });
 });
 
-
 function readSettings() {
     //Blacklist
     if (adapter.config.blacklist === undefined || adapter.config.blacklist.length === 0) adapter.log.debug('Keine Stationen zur Blacklist hinzugefügt');
