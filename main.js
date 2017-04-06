@@ -31,6 +31,7 @@ adapter.on('ready', function () {
     });
 });
 
+
 function readSettings() {
     //Blacklist
     if (adapter.config.blacklist === undefined || adapter.config.blacklist.length === 0) adapter.log.debug('Keine Stationen zur Blacklist hinzugefügt');
@@ -45,6 +46,11 @@ function readSettings() {
         adapter.log.debug('Whitelist (#' + (parseInt(t,10)+1) + '): ' + adapter.config.whitelist[t]);
     }
 } 
+
+
+function checkWildcard(station,wildcard) { // thx to stackoverflow.com/a/32402438
+    return new RegExp("^" + wildcard.split("*").join(".*") + "$").test(station);
+}
 
 function check_station (show) { // "Das Erste, am 11.12.2016 um 13:30 Uhr&lt;br/&gt;Familienfilm, D, A 2012, FSK: 6&lt..."
     var show_info = show.split(', '); // Sender steht vor erstem Komma
@@ -83,7 +89,14 @@ function check_station (show) { // "Das Erste, am 11.12.2016 um 13:30 Uhr&lt;br/
         }
     //    display = (adapter.config.blacklist.indexOf(station,0) == -1) ? true : false; // station not in blacklist means display = true
     } else { // if at least one entry in whitelist do not use blacklist but whitelist only
-        display = (adapter.config.whitelist.indexOf(station,0) != -1) ? true : false; // station not not in whitelist means display = true
+        for (var wl in adapter.config.whitelist) {
+            display = checkWildcard(station, adapter.config.whitelist[wl]);
+            if (display) break; // if wildcard found end "for"
+        }
+        if (!display) { // if no whildcard found try correct spelling
+            display = (adapter.config.whitelist.indexOf(station,0) != -1) ? true : false; // station not not in whitelist means display = true
+        }
+        adapter.log.debug(station + ' in Whitelist ?  ' + display);
     }
     return(display);
 }
