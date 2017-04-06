@@ -22,7 +22,7 @@ Sollen nur Sendungen eines oder mehrerer bestimmter Sender angezeigt werden, sin
 Es ist möglich mehrere Sender mit dem Platzhalter "\*" (Stern) abzudecken: *\*RTL*, *RTL\** findet also "*SuperRTL*" und "*RTL II*"
 
 To display only a specific list of stations add the stations names to the whitelist. The blacklist will be skipped if the whitelist is not empty.
-Wildcards "\*" (Stern) can shorten the list: *\*RTL*, *RTL\** returns "*SuperRTL*" und "*RTL II*"
+Wildcards "\*" (star) can shorten the whitelist: *\*RTL*, *RTL\** returns "*SuperRTL*" und "*RTL II*"
 
 ### Blacklist
 Sender, die nicht empfangbar sind oder nicht gelistet werden sollen, können in der Blacklist gespeichert und so bei der Ausgabe übersprungen werden. Die Blacklist wird nur berücksichtigt, wenn die Whitelist leer ist. Platzhalter können in der Blacklist bisher nicht verwendet werden.
