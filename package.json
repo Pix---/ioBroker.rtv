@@ -1,7 +1,7 @@
 {
   "name": "iobroker.rtv",
   "description": "TV Programm (jetzt, 20:15 Uhr, 22:00 Uhr und Tipps) aus den RSS Feeds von rtv.de",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "pix",
   "contributors": [
     "pix"
