@@ -5,7 +5,13 @@
         "desc": {                   "en": "rtv program guide from rss feed",
                                     "de": "rtv Programm Informationen aus RSS Feed",
                                     "ru": "rtv Program Guide - translate to russian, please"},
-        "version":                  "1.0.2",
+        "version": "1.0.2",
+	    "news": {
+	         "1.0.2": {
+                     "en": "use wildcards in whitelist",
+                     "de": "Platzhalter in der Whitelist benutzbar",
+                     "ru": "use wildcards in whitelist"}
+	    },
         "mode":                     "schedule",
         "schedule":                 "*/5 * * * *",
         "platform":                 "javascript/Node.js",
