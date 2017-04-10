@@ -10,6 +10,8 @@
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.rtv/master.svg)](https://travis-ci.org/Pix---/ioBroker.rtv)
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.rtv?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-rtv/)
 
+## :de: rtv hat die Bereitstellung der Daten als XML ausgesetzt. Daher funktioniert der Adapter bis auf weiteres nicht.
+## :en: rtv.de has cancelled providing the XML-Feed. There the adapter is not working for the time being.
 
 ## Beschreibung / Description
 :de: Dieser Adapter liefert das TV Programm aus den RSS-Feeds "Tipps", "jetzt", "20:15 Uhr" und "22:00 Uhr" des deutschen Anbieters [rtv.de](http://www.rtv.de/statisch/rtv/rss-feeds.html). Die Daten werden in JSON Objekte gespeichert, um in [ioBroker.vis](https://github.com/ioBroker/ioBroker.vis) verarbeitet zu werden.
