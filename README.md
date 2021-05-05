@@ -10,6 +10,8 @@
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/Pix---/ioBroker.rtv/master.svg)](https://travis-ci.org/Pix---/ioBroker.rtv)
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/Pix---/ioBroker.rtv?branch=master&svg=true)](https://ci.appveyor.com/project/Pix---/ioBroker-rtv/)
 
+# EOL
+
 ## :de: rtv hat die Bereitstellung der Daten als XML ausgesetzt. Daher funktioniert der Adapter bis auf weiteres nicht.
 ## :uk: rtv.de has cancelled providing the XML-Feed. There the adapter is not working for the time being.
 
